@@ -22,6 +22,7 @@ const useAddTweet = () => {
 
       dispatch(addNewTweet(newTweet));
       setTweet("");
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }
