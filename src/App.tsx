@@ -2,10 +2,9 @@ import { VscLoading } from "react-icons/vsc";
 import "./App.css";
 import ConnectAccount from "./components/ConnectAccount";
 import Form from "./components/Form";
-import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
-import useConnectAccount from "./hooks/useConnectAccount";
 import Tweets from "./components/Tweets";
+import useConnectAccount from "./hooks/useConnectAccount";
 
 declare global {
   interface Window {
