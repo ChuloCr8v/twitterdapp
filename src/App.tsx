@@ -13,7 +13,7 @@ declare global {
   }
 }
 
-export const contractAddress = "0xd5624ff2E9a44Af9a33fd1A9567611e05F5940fc";
+export const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
 
 function App() {
   const { connectingAccount } = useConnectAccount();

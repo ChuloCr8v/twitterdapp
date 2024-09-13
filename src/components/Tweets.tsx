@@ -2,10 +2,15 @@ import dayjs from "dayjs";
 import useConnectAccount from "../hooks/useConnectAccount";
 import useGetTweets from "../hooks/useGetTweets";
 import Tweet from "./Tweet";
+import { VscLoading } from "react-icons/vsc";
 
 const Tweets = () => {
   const { connectedAccount } = useConnectAccount();
-  const { tweets } = useGetTweets();
+  const { tweets, isGettingTweets } = useGetTweets();
+
+  if (isGettingTweets) {
+    return <VscLoading className="animate-spin" />;
+  }
 
   if (!connectedAccount) {
     return;
