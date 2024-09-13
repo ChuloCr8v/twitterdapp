@@ -28,7 +28,7 @@ const Tweets = () => {
         </p>
       </div>
 
-      <div className="w-full pt-4">
+      <div className="w-full py-8">
         {tweets.map((data: any) => (
           <Tweet
             data={data}
